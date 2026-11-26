@@ -1,0 +1,116 @@
+        body {
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .container {
+            background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            width: 100%;
+            /* prct largeur */
+            min-height: 100vh;
+            /* vh pour hauteur */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .digicard {
+            background-color:rosybrown;
+            width:50%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .digicard h1 {
+            font-family: "Dancing Script", cursive;
+            margin-top: 8px;
+            font-size: 24px;
+            color: #333;
+        }
+        .digicard p {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #e4dcdc;
+        }
+        /* .container > .digicard > div { */
+        /* border: 1px solid rgb(15, 15, 15); */
+        .card-header{
+            display: flex;
+            /* sers à mettre en ligne */
+            align-items: center;
+            padding:2%;
+        }
+        .photo{
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            /* border: 1px solid rgb(65, 94, 223); */
+        }
+        /* .titre{ */
+        .card-content{
+            padding: 50px;
+        }
+        .card-logo{
+            display: flex;
+            justify-content:space-around;
+        }
+        .logos{
+            text-decoration: none 
+        }
+        .logos a {
+            color: #141414;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            background-color: #EEAECA;
+            border-radius: 2px;
+        }
+        .logos a:hover {
+            background-color: #f56fa9;
+        }
+        .card-footer a{
+            display: inline-block;
+            background-color: #EEAECA;
+            color: #141414
+        }
+        .card-footer a:hover{
+            background-color: #f56fa9;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* border-radius: 50%; */
+        }
+        .titre {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #922052;
+        }
+        .card-footer {
+            margin-top: 20px;
+            
+        }
+        .infos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+      .digicard {
+        width: 80%;}
+        .card-content {
+        padding: 20px;}
+        .photo {
+        width: 120px;}
+        .card-logo{
+        flex-wrap: wrap;
+        gap: 30px;}
+        .digicard p {
+            font-size: 15px;
+        }
+      }
